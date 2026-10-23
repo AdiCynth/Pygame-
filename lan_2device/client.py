@@ -3,7 +3,7 @@ import json
 import sys
 import pygame
 
-SERVER_IP = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
+SERVER_IP = sys.argv[1] if len(sys.argv) > 1 else "10.0.16.155"
 PORT = 5555
 
 WIDTH, HEIGHT = 1200, 750

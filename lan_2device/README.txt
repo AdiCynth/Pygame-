@@ -1,17 +1,13 @@
 HOW TO RUN (two devices on the same Wi-Fi):
 
-DEVICE 1 (the host):
-  1. Open PowerShell, run:  ipconfig
-     Find your "IPv4 Address" (e.g. 192.168.1.15)
-  2. Terminal 1:  python server.py
-     (it will also print your LAN IP for you)
-  3. Terminal 2:  python client.py
-     (this connects as Player 1)
+DEVICE 1 (host - your PC at 10.0.16.155):
+  1. Terminal 1:  python server.py
+  2. Terminal 2:  python client.py
+     (connects as Player 1)
 
-DEVICE 2 (the guest):
-  1. Open PowerShell, run:
-       python client.py 192.168.1.15
-     (replace with Device 1's actual IP)
+DEVICE 2 (guest / second device on same Wi-Fi):
+  1. python client.py
+     (defaults to 10.0.16.155, or explicitly: python client.py 10.0.16.155)
 
 NOTES:
 - If Windows shows a firewall popup, click "Allow access"
